@@ -43,7 +43,7 @@ if os.path.isdir(directory):
 	writeFile.close()
 
 	print("\nFile contents: ")
-	readFile = open(fileName,"r")
+	readFile = open(os.path.join(directory, filename), "r") 
 	# Opens the file that was created and reads it.
 	print(readFile.read())
 	# Prints the contents of the file.
